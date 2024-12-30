@@ -27,7 +27,7 @@
                 <label for="school">School:</label>
                 <input type="text" id="school" name="school" required>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="btnSub">Submit</button>
             </form>
         </div>
 

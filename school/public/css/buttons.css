@@ -1,39 +1,67 @@
+/* General Button Styling */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 /* Edit Button */
 button.edit-btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #007bff; /* Blue */
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button.edit-btn:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
     transform: scale(1.05);
 }
 
 /* Delete Button */
 button.delete-btn {
-    background-color: #f44336; /* Red */
+    background-color: #dc3545; /* Red */
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button.delete-btn:hover {
-    background-color: #d32f2f;
+    background-color: #c82333;
     transform: scale(1.05);
 }
 
-/* Table Button Container Styling */
+/* Action Buttons Container */
 .action-buttons {
     display: flex;
-    gap: 10px; /* Spacing between buttons */
     justify-content: center;
     align-items: center;
+    gap: 10px; /* Spacing between buttons */
+}
+
+/* Table Styling for Alignment */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+table td {
+    text-align: center; /* Align all table data in the center */
 }
