@@ -1,93 +1,84 @@
-/* form-styles.css */
-
-/* Style for the body */
+/* Center the form and table on the page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-/* Title container */
 h1 {
-    font-size: 24px;
-    color: #343a40;
-    text-align: center;
-    margin: 20px 0;
+    margin-top: 30px;
 }
 
-/* Container for the form */
 .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Form container styling */
-form {
-    background-color: #ffffff;
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
-/* Form labels */
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #495057;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
-/* Input fields */
 input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
 }
 
-/* Button */
 button {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 15px;
-    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
-/* Style for the redirect button */
-.redirect-button {
-    background-color: #28a745;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+/* Styling for the student table */
+table {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
 }
 
-.redirect-button:hover {
-    background-color: #218838;
+table, th, td {
+    border: 1px solid black;
 }
 
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}

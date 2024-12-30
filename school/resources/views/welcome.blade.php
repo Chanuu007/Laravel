@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/form-styles.css') }}">
 </head>
 <body>
-    <a href="{{ url('/students/create') }}">
+    <a href="{{ url('/students') }}">
         <button class="redirect-button">Go to Student Form</button>
     </a>
 </body>

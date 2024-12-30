@@ -7,10 +7,12 @@ use App\Models\Student;
 
 class StudentController extends Controller
 {
-    // Show the form
+    //
     public function create()
     {
-        return view('student_form');
+        //return view('student_form');
+        $students = Student::all(); // Fetch all students
+        return view('students.create', compact('students')); // Return the form and the student list
     }
 
     // Handle form submission
@@ -27,6 +29,6 @@ class StudentController extends Controller
         Student::create($validated);
 
         // Redirect or return a response
-        return redirect('/students/create')->with('success', 'Student registered successfully!');
+        return redirect('/students')->with('success', 'Student registered successfully!');
     }
 }
