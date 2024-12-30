@@ -1,0 +1,39 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit Button */
+button.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button.edit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+button.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Table Button Container Styling */
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    justify-content: center;
+    align-items: center;
+}

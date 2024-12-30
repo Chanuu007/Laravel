@@ -7,8 +7,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route for displaying the student form and student list
-Route::get('/students', [StudentController::class, 'create']); // Show form and students list
 
-// Route for storing the student data after form submission
-Route::post('/students', [StudentController::class, 'store']); // Store form data
+Route::get('/students/create', [StudentController::class, 'create']); // Show form and table
+Route::post('/students', [StudentController::class, 'store']);        // Store new student
+Route::get('/students/{id}/edit', [StudentController::class, 'edit']); // Show edit form
+Route::put('/students/{id}', [StudentController::class, 'update']);   // Update student
+Route::delete('/students/{id}/delete', [StudentController::class, 'destroy']); // Delete student
